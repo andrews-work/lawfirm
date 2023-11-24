@@ -1,0 +1,54 @@
+/* Value.css */
+
+/* Center the component vertically and horizontally */
+.value-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 5vh 0;
+}
+
+/* Set the width of the div containing values to 80vw */
+.value-wrapper {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid with a minimum of 200px and equal-width columns */
+  gap: 1rem; /* Adjust the gap as needed */
+  justify-items: center; /* Center the items horizontally */
+  align-items: start; /* Align items to the top */
+}
+
+/* Center the values horizontally within each grid item */
+.value-item {
+  text-align: center;
+  height: 30vh;
+  max-width: 200px;
+}
+
+/* Align icons, titles, and text properly on the x-axis */
+.icon,
+.value-title,
+.value-text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Set a consistent max-width for each type of content */
+.icon {
+  max-width: 50px; /* Adjust as needed */
+}
+
+.value-title,
+.value-text {
+  max-width: 200px; /* Adjust as needed */
+}
+
+/* Apply grid layout when screen width is 771px or wider */
+@media (min-width: 771px) {
+  .value-wrapper {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for horizontal layout */
+    align-items: center; /* Align items to the center vertically */
+  }
+}

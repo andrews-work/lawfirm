@@ -1,0 +1,18 @@
+/* Add this CSS to your component's CSS file */
+.profile {
+    margin-top: 5vh; /* Add the desired margin value between the image and the top */
+  }
+  
+  /* Apply styles for smaller screens */
+  @media (max-width: 576px) {
+    .profile img {
+      width: 100vw; /* Adjust the width for smaller screens */
+      max-width: 100vw; /* Ensure the image doesn't exceed the viewport width */
+      height: auto; /* Maintain image aspect ratio */
+    }
+  }
+  
+  /* Add this CSS to your component's CSS file */
+.eleven {
+  overflow-x: hidden;
+}

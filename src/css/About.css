@@ -1,0 +1,53 @@
+/* About.css */
+
+/* Your existing styles here */
+
+.containerStyle {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row; /* Default layout: image on the left, text on the right */
+  margin-top: 5vh; /* Add margin to the top of the container */
+}
+
+.imageStyle {
+  width: 65vw;
+  height: 70vh;
+  margin-top: 2vh; /* Add margin between image and text */
+}
+
+.textContainerStyle {
+  width: 20vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  overflow-y: auto;
+}
+
+.textStyle {
+  font-size: 16px;
+  text-align: justify;
+}
+
+/* Apply flex-direction: column when screen width is under 1000px */
+@media (max-width: 1000px) {
+  .containerStyle {
+    flex-direction: column-reverse; /* Reverse layout: text on top, image on bottom */
+    align-items: center;
+    height: auto;
+  }
+
+  /* Adjust other styles as needed */
+  .imageStyle {
+    width: 100%;
+    height: auto;
+    margin-top: 5vh; /* Add margin between text and image */
+  }
+
+  .textContainerStyle {
+    width: 80%;
+    height: auto;
+    overflow-y: auto;
+  }
+}

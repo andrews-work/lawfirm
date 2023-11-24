@@ -1,0 +1,26 @@
+.custom-container {
+    width: 100vw; /* Set width to 100vw */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 20vh;
+
+}
+
+h1 {
+    margin-left: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-left: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-indent {
+    text-indent: 0;
+}

@@ -1,0 +1,152 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add margin around h4 elements for all screen sizes */
+.text-content h4 {
+    margin: 20px 0; /* Adjust the margin to your desired spacing */
+}
+
+/* Add the new CSS rule for paragraph spacing */
+.text-content p {
+    margin: 0;
+    padding: 10px 0; /* Adjust the padding to your desired spacing */
+}
+
+/* Add the new CSS rule for ::after content */
+.text-content p::after {
+    content: none !important; /* Add !important to override conflicting styles */
+    /* Additional styles here, if needed */
+}
+
+
+
+/* Media query for screens smaller than 770px */
+@media (max-width: 770px) {
+    /* Adjust styles for small screens */
+    .container {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-column {
+        width: 95vw;
+        order: 1; /* Display text above image */
+    }
+
+    .image-column {
+        width: 95vw;
+        height: auto;
+        order: 2; /* Display image below text */
+    }
+
+    .image-column img {
+        width: 100%; /* Adjust this value as needed */
+        height: auto;
+        margin-bottom: 2vh;
+    }
+
+    /* Remove overflow and spacing for small screens */
+    .text-content {
+        overflow: visible;
+        padding: 0;
+        height: auto; 
+    
+    }
+}
+
+/* Additional styling for larger screens (min-width: 771px) */
+@media (min-width: 771px) {
+    .container {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        display: flex;
+    }
+
+    .text-column {
+        padding-left: 0;
+        padding-right: 5vw;
+        width: 25vw;
+        margin-right: 5vw; /* Add 5vw margin to the right of the text column */
+        order: 1; /* Display text on the left */
+    }
+
+    .text-content {
+        height: 70vh;
+        overflow-y: scroll;
+        padding-bottom: 10px;
+    }
+
+    .image-column {
+        height: 70vh; /* Match the height of text-content */
+        width: 60vw; /* Adjust this value to your desired width (e.g., 60vw) */
+        order: 2; /* Display image on the right */
+    }
+
+    .image-column img {
+        width: 55vw; /* Set the width to 60vw */
+        height: 70vh; /* Maintain aspect ratio */
+        object-fit: cover;
+    }
+}
+
+/* Additional styling for larger screens (min-width: 1600px) */
+@media (min-width: 1600px) {
+    .text-column {
+        margin-left: -5vw; /* Adjust the negative margin as needed */
+    }
+}
+
+/* Additional styling for larger screens (min-width: 1600px) */
+@media (min-width: 1750px) {
+    .text-column {
+        margin-left: -7vw; /* Adjust the negative margin as needed */
+    }
+}
+
+/* Additional styling for larger screens (min-width: 1600px) */
+@media (min-width: 1900px) {
+    .text-column {
+        margin-left: -10vw; /* Adjust the negative margin as needed */
+    }
+}
+
+/* Media query for screens between 770px and 991px */
+@media (min-width: 771px) and (max-width: 991px) {
+    .container {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-column {
+        width: 95vw;
+        order: 1; /* Display text above image */
+    }
+
+    .image-column {
+        width: 95vw;
+        height: auto;
+        order: 2; /* Display image below text */
+    }
+
+    .image-column img {
+        width: 100%; /* Adjust this value as needed */
+        height: auto;
+        margin-bottom: 2vh;
+    }
+
+    /* Remove overflow and spacing for small screens */
+    .text-content {
+        overflow: visible;
+        padding: 0;
+        height: auto;
+    }
+}
+
+/* Rest of your CSS styles for other screen sizes go here */
+
